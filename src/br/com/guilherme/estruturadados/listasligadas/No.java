@@ -1,6 +1,6 @@
 package br.com.guilherme.estruturadados.listasligadas;
 
-public class No<T> {
+class No<T> {
 
     private T elemento;
     private No<T> noProximo;
@@ -33,5 +33,13 @@ public class No<T> {
 
     public void setNoProximo(No<T> noProximo) {
         this.noProximo = noProximo;
+    }
+
+    @Override
+    public String toString() {
+        return "No{" +
+                "elemento=" + elemento +
+                ", noProximo=" + noProximo +
+                '}';
     }
 }
